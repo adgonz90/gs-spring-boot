@@ -11,7 +11,7 @@ FROM ubuntu
 # Define working directory.
 WORKDIR /data
 
-ADD target/gs-spring-boot-0.1.0.jar
+ADD target/gs-spring-boot-0.1.0.jar .
 
 # Install Java.
 RUN \
