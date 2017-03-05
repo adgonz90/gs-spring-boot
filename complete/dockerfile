@@ -16,7 +16,7 @@ ADD target/gs-spring-boot-0.1.0.jar .
 # Install Java.
 RUN \
   apt-get update && \
-  apt-get install software-properties-common python-software-properties && \
+  apt-get install software-properties-common python-software-properties --yes && \
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get update && \
